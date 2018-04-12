@@ -18,5 +18,13 @@
                 android:title="Forum" />
         </menu>
     </item>
+    <item android:title=" Call Communication">
+        <menu>
+            <item
+                android:id="@+id/nav_PlaceCalls"
+                android:icon="@drawable/call"
+                android:title="Place Call" />
+        </menu>
+    </item>
 
 </menu>

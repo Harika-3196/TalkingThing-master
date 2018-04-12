@@ -1,5 +1,6 @@
 package com.noise.android.talkingthing;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.support.annotation.NonNull;
@@ -35,6 +36,12 @@ public class Home extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int id = item.getItemId();
+                if(id==R.id.nav_PlaceCalls)
+                {
+                    Intent intent=new Intent(Home.this,LoginActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
                 if (id == R.id.nav_forum) {
 //                    Toast.makeText(getBaseContext(), "yaaaaaaaaay", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(getBaseContext(), Forum.class));

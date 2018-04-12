@@ -6,6 +6,7 @@ android {
     defaultConfig {
         applicationId "com.noise.android.talkingthing"
         minSdkVersion 16
+
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
